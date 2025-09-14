@@ -3,54 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 1 Project Deliverable</title>
-
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Chess Database</title>
 </head>
 <body>
-    <div class="header-row">
-        <div class="title-column">
-            <div class="title">Chess Tracker</div>
-        </div>
-
-        <div class="leaderboard">
-            <div class="table-row"><span><b>Name</b></span><span class="elo"><b>Elo</b></span></div>
-            <div class="table-row"><span>1. Jane Doe</span><span class="elo">2180</span></div>
-            <div class="table-row"><span>2. John Smith</span><span class="elo">2154</span></div>
-            <div class="table-row"><span>3. Maryjane Parker</span><span class="elo">2127</span></div>
-            <div class="table-row"><span>4. Lebron James</span><span class="elo">2079</span></div>
-            <div class="table-row"><span>5. Joe Biden</span><span class="elo">2053</span></div>
-            <div class="table-row"><span>6. Kendrick Lamar</span><span class="elo">1947</span></div>
-        </div>
+    <div class="leaderboard-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>ID</th>
+                    <th>Elo</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
     </div>
-
-    <div class="introduction">
-        <div>Track your chess games, monitor your progress, and compare your Elo with others.</div>
-        <div><i>Need to update your stats?</i> <b><a href="https://www.chess.com">Click here to get started!</a></b></div>
-    </div>
-
-    <div class="custom-groups">
-        <div class="group" style="max-width: 130%;">
-            <div class="table-row"><span><b>Custom Groups</b></span><span class="elo"><a href="#" style="color: white;">Add/Remove groups</a></span></div>
-        </div>
-
-        <div class="group">
-            <h1>Custom Group 1</h1>
-            <div class="table-row"><span><b>Name</b></span><span class="elo"><b>Elo</b></span></div>
-            <div class="table-row"><span>Jane Doe</span><span class="elo">2180</span></div>
-            <div class="table-row"><span>Lebron James</span><span class="elo">2079</span></div>
-            <div class="table-row"><span>Kendrick Lamar</span><span class="elo">1947</span></div>
-        </div>
-
-        <div class="group" style="background-color: white;">
-            <h1>Custom Group 2</h1>
-            <div class="table-row" style="color: #8c1d40;"><span><b>Name</b></span><span class="elo" style="color: #ffc267;"><b>Elo</b></span></div>
-            <div class="table-row" style="color: #8c1d40;"><span>John Pork</span><span class="elo" style="color: #ffc267;">1890</span></div>
-            <div class="table-row" style="color: #8c1d40;"><span>Magnus Carlson</span><span class="elo" style="color: #ffc267;">2839</span></div>
-            <div class="table-row" style="color: #8c1d40;"><span>Jacksepticeye</span><span class="elo" style="color: #ffc267;">1593</span></div>
-        </div>
-    </div>
-
-<script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>

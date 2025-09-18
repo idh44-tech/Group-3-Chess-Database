@@ -2,11 +2,20 @@ body
 {
     font-family: sans-serif;
     display: flex;
+    /*justify-content: center; */
+}
+.elo_chart
+{
+    margin: 2rem;
+    
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
     justify-content: center;
 }
 
 table
 {
+    
     border-collapse: collapse;
     width: 100%;
     max-width: 60rem;
@@ -14,11 +23,13 @@ table
 
 thead
 {
+    
     background-color: darkcyan;
 }
 
 th, td
 {
+    
     font-size: 1.5rem;
     padding: 1rem 1rem;
     text-align: center;
@@ -26,11 +37,13 @@ th, td
 
 th
 {
+    
     color: white;
 }
 
 tbody tr:nth-child(even)
 {
+    justify-content: center;
     background-color: lightgrey;
 }
 
@@ -49,4 +62,9 @@ a:link,
 a:visited 
 {
     color: black;
+}
+.container {
+  display: flex;
+  justify-content: left;
+  height: 100vh;
 }

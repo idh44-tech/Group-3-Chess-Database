@@ -1,8 +1,5 @@
 # **Introduction**
-Our project is a chess tracker which tracks various information relating to chess players and their performance.  The intention and primary function of the project is to create tracker that easily and clearly 
-displays information about different chess players.  Oftentimes players will want to track their own or other's performance and progress in a more formal manner.  This site will allow such tracking by allowing
-players and easy way to keep clear and useful information on themselves and other players while also being able to check the information provided on other players.  This site is a much more simple manner than
-manually keeping track of other players' performance and allows them to see their own and others' progress.  
+Our project is a chess tracker which tracks various information relating to chess players and their performance.  The intention and primary function of the project is to create a tracker that easily and clearly displays information about different chess players.  Oftentimes players will want to track their own or other's performance and progress in a more formal manner.  This site will allow such tracking by allowing players and easy way to keep clear and useful information on themselves and other players while also being able to check the information provided on other players.  This site is a much more simple method than manually keeping track of other players' performance and allows players to see their own and others' progress.  
 
 # **Initial Value Proposition**
 The project cuts down on the time chess players spend either manually recording or being forced to memorize and recall player skill and strategy of various opponents, as well as sharing this information between each other faster.  

@@ -35,7 +35,7 @@ Interview 3:
 Interviewee: Adam Johnson  
 Interviewer(s): Evan Paddock  
 Date: 9/18  
-Customer Segment: Even Coordinator at Chess Club at NAU  
+Customer Segment: Event Coordinator at Chess Club at NAU  
 Key Insights: I would use a Chess Tracker Service  
 After over the board (OTB) tournaments, I often input the games in an analysis board and breeze through the games without much thought. This service is helpful because it helps me compare different tournament games.  
 Color code results and graph them. Show results based on a given search.  

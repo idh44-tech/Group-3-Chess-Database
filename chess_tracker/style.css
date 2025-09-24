@@ -68,3 +68,29 @@ a:visited
   justify-content: left;
   height: 100vh;
 }
+.player-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .player-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #ccc;
+    overflow: hidden;
+    padding: 1rem;
+  }
+  
+  .player-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .add-player-form {
+    padding: 2rem;
+    background: #fff3e0;
+    margin-top: 2rem;
+  }

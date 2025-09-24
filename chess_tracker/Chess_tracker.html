@@ -12,7 +12,7 @@
     <div class="sidebar">
       <input type="text" id="search" placeholder="Search people..." />
       <ul id="item-list">
-        <li data-id="person 1"><a href="Bruce Wayne/index.html">Bruce Waynec</a></li>
+        <li data-id="person 1"><a href="Bruce Wayne/index.html">Bruce Wayne</a></li>
         <li data-id="person 2">person 2</li>
         <li data-id="person 3">person 3</li>
       </ul>
@@ -59,6 +59,18 @@
             </tr>
         </tbody>
     </table>
-    <script src="script.js"></script>
+     <section id="Player-List" class="Player-list"></section>
+
+    <section class="add-Player-form">
+      <h2>Add a New Player</h2>
+      <form id="playerForm">
+        <input type="text" id="Player_Name" placeholder="Player Name" required />
+        <input type="text" id="Rating" placeholder="Rating" required />
+        <input type="file" id="Player_Image" accept="image/*" />
+        <button type="submit">Add Player</button>
+      </form>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Tracker.js"></script>
 </body>
 </html>

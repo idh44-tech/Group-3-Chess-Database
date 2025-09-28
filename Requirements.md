@@ -41,7 +41,7 @@ The mimimum viabel product will:
 # **Use Cases**
 ## Use Case Diagram
 
-![image]
+![image](./Screenshot 2025-09-28 120151.png)
 
 ## Use Case Descriptions and Interface Sketch
 
@@ -59,7 +59,7 @@ Extenstions:
 2a: User did not enter all required information (name and elo)
 System: generate errror message telling user they must enter at least the name and elo of the player.
 Interface Sketch:
-
+![image](./Screenshot 2025-09-28 123804.png)
 
 Title: Update existing player profile
 Actors: User
@@ -77,7 +77,7 @@ Extensions:
 2a: user entered improper information(eg, not a number for elo)
 system: generate an error message for all fields with invalid information
 Interface Sketch:
-
+![image](./Screenshot 2025-09-28 123922.png)
 
 Title: View leaderboard
 Actors: User
@@ -90,7 +90,7 @@ Extensions:
 2a: leaderboard fails to load properly
 system: generate error messgage saying it cannot load the leaderboard
 Interface Sketch:
-
+![image](./Screenshot 2025-09-28 124415.png)
 
 Title: Search for Player by name
 Actors: User
@@ -105,7 +105,7 @@ Extensions:
 2a: player with searched string in name does not exist
 system: Informs user that no such player exists in the database
 Interface Sketch:
-
+![image](./Screenshot 2025-09-28 124615.png)
 
 # **User Stories**
 

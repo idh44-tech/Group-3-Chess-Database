@@ -119,3 +119,7 @@ Interface Sketch:
 8. As a chess player I want to see profiles on the highest performing players so that I know how I measure up.  Priority: low. Hours: 3
 9. As a chess player I want to quickly search all the players so that I can find information on someone I'm curious about.  Priority: mid.  Hours: 2
 10. As a chess player I want to quickly access the site so that I can quickly pull up the information I want.  Priority: mid.  Hours: 1
+
+# **Issue Tracker**
+[link here](https://github.com/idh44-tech/Group-3-Chess-Database/issues)  
+

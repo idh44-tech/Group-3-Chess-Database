@@ -15,8 +15,8 @@ Customer Segment: Chess players who often play against the same people in person
 
 # **Stakeholders**
 
-Users: Chess Players
-Developers: Our Group
+Users: Chess Players  
+Developers: Our Group  
 
 # **Functional Requirements (features)**
 
@@ -33,79 +33,79 @@ Developers: Our Group
 
 # **MVP**
 
-The mimimum viabel product will: 
--Have that ability for users to upload and update profile information on players
--Have a search feature that allows users to search for particular players by name
--Have a leaderboard displaying the highest-rated players currently
+The mimimum viabel product will:  
+-Have that ability for users to upload and update profile information on players  
+-Have a search feature that allows users to search for particular players by name  
+-Have a leaderboard displaying the highest-rated players currently  
 
 # **Use Cases**
 ## Use Case Diagram
 
-![image](Screenshot_2025-09-28_120151.png)
+![image](Screenshot_2025-09-28_120151.png)  
 
 ## Use Case Descriptions and Interface Sketch
 
-Title: Create new player profile
-Actors: User
-Preconditions: User is on the site
-Postconditions: New player profile is uploaded
-Success Scenario: 
-User: enters player name
-User: enters all necessary player statistics
-User: enters any optional player statistics
-User: finishes and presses button to upload
-System: records player information and ranks them accordingly
-Extenstions:
-2a: User did not enter all required information (name and elo)
-System: generate errror message telling user they must enter at least the name and elo of the player.
-Interface Sketch:
-![image](Screenshot_2025-09-28_123804.png)
+Title: Create new player profile  
+Actors: User  
+Preconditions: User is on the site  
+Postconditions: New player profile is uploaded  
+Success Scenario:  
+User: enters player name  
+User: enters all necessary player statistics  
+User: enters any optional player statistics  
+User: finishes and presses button to upload  
+System: records player information and ranks them accordingly  
+Extenstions:  
+2a: User did not enter all required information (name and elo)  
+System: generate errror message telling user they must enter at least the name and elo of the player.  
+Interface Sketch:  
+![image](Screenshot_2025-09-28_123804.png)  
 
-Title: Update existing player profile
-Actors: User
-Preconditions: Player profile exists and user is viewing it
-Postconditions: Player profile is changed new fit new parameters
-Success Scenario: 
-user: Selects option to update profile
-system: opens page to update player information
-user: changes or enters whatever new information they want
-user: confirms changes
-system: records new information and overwrites old information
-system: displays new information on player profile
+Title: Update existing player profile  
+Actors: User  
+Preconditions: Player profile exists and user is viewing it  
+Postconditions: Player profile is changed new fit new parameters  
+Success Scenario:  
+user: Selects option to update profile  
+system: opens page to update player information  
+user: changes or enters whatever new information they want  
+user: confirms changes  
+system: records new information and overwrites old information  
+system: displays new information on player profile  
 
-Extensions:
-2a: user entered improper information(eg, not a number for elo)
-system: generate an error message for all fields with invalid information
-Interface Sketch:
-![image](Screenshot_2025-09-28_123922.png)
+Extensions:  
+2a: user entered improper information(eg, not a number for elo)  
+system: generate an error message for all fields with invalid information  
+Interface Sketch:  
+![image](Screenshot_2025-09-28_123922.png)  
 
-Title: View leaderboard
-Actors: User
-Preconditions: user is on site
-Postconditions: leaderboard is displayed
-Succcess Scenario:
-user: selects option to view leaderboard
-system: displays leaderboard indicating the current highest ranked players and their basic information (name, elo)
-Extensions:
-2a: leaderboard fails to load properly
-system: generate error messgage saying it cannot load the leaderboard
-Interface Sketch:
-![image](Screenshot_2025-09-28_124415.png)
+Title: View leaderboard  
+Actors: User  
+Preconditions: user is on site  
+Postconditions: leaderboard is displayed  
+Succcess Scenario:  
+user: selects option to view leaderboard  
+system: displays leaderboard indicating the current highest ranked players and their basic information (name, elo)  
+Extensions:  
+2a: leaderboard fails to load properly  
+system: generate error messgage saying it cannot load the leaderboard  
+Interface Sketch:  
+![image](Screenshot_2025-09-28_124415.png)  
 
-Title: Search for Player by name
-Actors: User
-Preconditions: user is on site
-Postconditions: players are narrowed down to all whose names include the searched string of characters
-Success Scenario:
-user: enters string of characters that is part of a player's name
-system: displays all players that have that string in their name
-user: clicks on the user they are looking for
-system: displays that user's profile
-Extensions:
-2a: player with searched string in name does not exist
-system: Informs user that no such player exists in the database
-Interface Sketch:
-![image](Screenshot_2025-09-28_124615.png)
+Title: Search for Player by name  
+Actors: User  
+Preconditions: user is on site  
+Postconditions: players are narrowed down to all whose names include the searched string of characters  
+Success Scenario:  
+user: enters string of characters that is part of a player's name  
+system: displays all players that have that string in their name  
+user: clicks on the user they are looking for  
+system: displays that user's profile  
+Extensions:  
+2a: player with searched string in name does not exist  
+system: Informs user that no such player exists in the database  
+Interface Sketch:  
+![image](Screenshot_2025-09-28_124615.png)  
 
 # **User Stories**
 

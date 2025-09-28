@@ -122,4 +122,4 @@ Interface Sketch:
 
 # **Issue Tracker**
 [link here](https://github.com/idh44-tech/Group-3-Chess-Database/issues)  
-
+![image](Screenshot_2025-09-28_133217.png)  

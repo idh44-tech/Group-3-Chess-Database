@@ -1,18 +1,43 @@
 body
 {
-    background-color: black;
     margin: 0;
+    padding: 0;
 }
 
-p
+#container
 {
-    font-family: monospace;
-    font-size: 3rem;
-    margin: 0;
-
-    display: inline-flex;
+    width: 100%;
+    max-width: 60rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+}
 
-    background-color: white;
+#timers
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.player
+{
+    font-size: 5rem;
+    font-family: monospace;
+    background-color: grey;
+    cursor: default;
+}
+
+.active
+{
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+#reset,
+#pause
+{
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: bold;
 }

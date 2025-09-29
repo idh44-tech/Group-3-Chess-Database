@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Chess Timer</title>
+    <title>Chess Clock Timer</title>
 </head>
 <body>
-    <p id="countdown"></p>
+    <div id="container">
+        <div class="timers">
+            <div class="player active">
+                <p id="counter1">test</p>
+            </div>
+            <div class="player">
+                <p id="counter2">test</p>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="reset">Reset</button>
+            <button id="pause">Pause</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

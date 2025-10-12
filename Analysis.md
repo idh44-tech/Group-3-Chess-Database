@@ -6,4 +6,4 @@ The user can create **Player** profiles using the **New Player** feature and ent
 
 # **Conceptual Model**
 
-![image][
+![image](Screenshot_2025-10-12_140838.png) 

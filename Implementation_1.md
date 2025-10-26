@@ -6,3 +6,26 @@ GitHub repo link: https://github.com/idh44-tech/Group-3-Chess-Database
 
 **Implemented Requirements**
 
+jmk658:
+
+[link](https://github.com/idh44-tech/Group-3-Chess-Database/pulls?q=is%3Apr+author%3Ajmk658)
+
+![image](jmk_pulls)
+
+idh44-tech:
+
+[link](https://github.com/idh44-tech/Group-3-Chess-Database/pulls?q=is%3Apr+author%3Aidh44-tech)
+
+![image](idh44-tech_pulls)
+
+pieceoftoast42:
+
+[link](https://github.com/idh44-tech/Group-3-Chess-Database/pulls?q=is%3Apr+author%3Apieceoftoast42)
+
+![image](pieceoftoast42_pulls)
+
+sjh559:
+
+[link](https://github.com/idh44-tech/Group-3-Chess-Database/pulls?q=is%3Apr+author%3Asjh559)
+
+![image](sjh559_pulls)

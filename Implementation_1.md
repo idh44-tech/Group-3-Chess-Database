@@ -10,7 +10,7 @@ jmk658:
 
 [link](https://github.com/idh44-tech/Group-3-Chess-Database/pulls?q=is%3Apr+author%3Ajmk658)
 
-![image](jmk_pulls)
+![image](jmk658_pulls)
 
 idh44-tech:
 

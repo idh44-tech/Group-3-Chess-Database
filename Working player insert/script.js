@@ -1,9 +1,18 @@
 
-const playerList = document.getElementById("Player-List");
-const playerForm = document.getElementById("playerForm");
+let playerList;;
+let playerForm;
 
+function main()
+{
+    playerList = document.getElementById("Player-List");
+    playerForm = document.getElementById("playerForm");
 
-playerForm.addEventListener("submit", function(e) {
+    if (!playerForm) return;
+    playerForm.addEventListener("submit", addPlayer);
+}
+
+function addPlayer(e)
+{
     e.preventDefault();
 
     
@@ -11,8 +20,7 @@ playerForm.addEventListener("submit", function(e) {
     const rating = document.getElementById("Rating").value.trim();
     const imageInput = document.getElementById("Player Image");
 
-    if (!playerName || !rating) return;
-
+    if (!playerName || !rating) return false;
     
     const card = document.createElement("div");
     card.classList.add("player-card");
@@ -32,4 +40,10 @@ playerForm.addEventListener("submit", function(e) {
     playerList.appendChild(card);
 
     playerForm.reset();
-});
+
+    return true;
+}
+
+main();
+
+module.exports = {addPlayer, main};

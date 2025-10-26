@@ -4,8 +4,8 @@ Description: This code is for a simple chess-tracking site that allows uploading
 
 Setup: No setup required if you simply access the site.  If you want to host a version yourself you are free to do so.
 
-Current Version: 0.1.0
+Current Version: 1.0.0-alpha
 
 Contribution guidelines: Be cordial, do your best to make software that works and enhances the function of the site.  
 
-Git tag for Version 0.1.0: 
+Git tag for Version 1.0.0-alpha: 

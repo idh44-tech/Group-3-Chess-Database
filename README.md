@@ -1,4 +1,4 @@
-# Group-3-Chess-Traker
+# Group-3-Chess-Tracker
 
 Description: This code is for a simple chess-tracking site that allows uploading and modifying of player information as well as other features a chess player may find convenient
 

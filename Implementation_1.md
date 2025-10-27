@@ -27,8 +27,8 @@ idh44-tech:
 3. [pull request](https://github.com/idh44-tech/Group-3-Chess-Database/pull/9)
 4. idh44-tech
 5. idh44-tech
-6. 
-7. 
+6. not merged into the main site for this release yet
+7. N/A
 
 2.2: 
 
@@ -37,8 +37,8 @@ idh44-tech:
 3. [pull request](https://github.com/idh44-tech/Group-3-Chess-Database/pull/1)
 4. idh44-tech
 5. idh44-tech
-6. 
-7. 
+6. [test](https://github.com/idh44-tech/Group-3-Chess-Database/blob/main/script.test.js)
+7. ![image](Working_homepage)
 
 
 pieceoftoast42:
@@ -54,8 +54,8 @@ pieceoftoast42:
 3. [pull request](https://github.com/idh44-tech/Group-3-Chess-Database/pull/27)
 4. pieceoftoast42
 5. pieceoftoast42
-6. 
-7. 
+6. (not necessary)
+7. ![image](openings_page)
 
 sjh559:
 
@@ -73,7 +73,11 @@ sjh559:
 
 **Automated Testing**
 
-
+Our testing framework is Jest.  We chose this framework because group members were already familiar with it.  
+Link to the test file [here](https://github.com/idh44-tech/Group-3-Chess-Database/blob/main/script.test.js) 
+Link to the file being tested [here](https://github.com/idh44-tech/Group-3-Chess-Database/blob/main/script.js) 
+The test validates that the site responds correctly to various kinds of input for entering a new profile in.  
+I wasn't able to test it myself.  I'm on windows and can't get node.js to work in cmd.  
 
 # Technology Stack
 
@@ -89,7 +93,8 @@ Through a combination of online tutorials and articles relevant to the technolog
 
 # Deployment
 
-
+site link [here](https://math1029.github.io/Group-3-Chess-Database/)
+Deployed via github itself this is the easiest way, at least for now, while development is still underway.  
 
 # Licensing
 
@@ -97,11 +102,16 @@ We adopted the MIT license because the software is fundamentally quite simple co
 
 # Repository Documentation
 
-All our files are [here](https://github.com/idh44-tech/Group-3-Chess-Database)
+All files are [here](https://github.com/idh44-tech/Group-3-Chess-Database)  
 
 # User Interface Design
 
-
+The site had a simple and intuitive design that is easy to understand.  
+![image](working_homepage)
+The site allows you to add profiles as a user, documenting player information.
+![image](Example_profile)
+We also have our openings page, which contains information on many common chess openings
+![image](openings_page)
 
 # Retrospective Analysis
 

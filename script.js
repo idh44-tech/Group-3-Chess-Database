@@ -1,6 +1,18 @@
 
-let playerList;;
+let playerList;
 let playerForm;
+
+//array to read info from
+let CardArray = [];
+
+// Load saved cards from localStorage on page load
+window.addEventListener('DOMContentLoaded', () => {
+  const saved = localStorage.getItem('CardArray');
+  if (saved) {
+    CardArray = JSON.parse(saved);
+    autopopulateCards(CardArray);
+  }
+});
 
 function main()
 {
@@ -31,17 +43,65 @@ function addPlayer(e)
         imgSrc = URL.createObjectURL(imageInput.files[0]);
     }
 
-    card.innerHTML = `
-        <img src="${imgSrc}" alt="${playerName}">
-        <h3>${playerName}</h3>
-        <p>Rating: ${rating}</p>
-    `;
-    
-    playerList.appendChild(card);
+    // Create a player object and add to CardArray
+    const playerCard = {
+        playerName,
+        rating,
+        imgSrc
+    };
+
+    CardArray.push(playerCard);
+
+    // Save to localStorage
+    localStorage.setItem('CardArray', JSON.stringify(CardArray));
+
+    // Update the displayed list
+    autopopulateCards(CardArray);
 
     playerForm.reset();
 
     return true;
+}
+
+// Function to display cards
+function autopopulateCards(cards,index) {
+  playerList.innerHTML = "";  // Clear current cards
+  //loop through array
+  cards.forEach(card => {
+    //make a card
+    const div = document.createElement("div");
+    //add the data to the card
+    div.classList.add("player-card");
+
+    //the format of the card
+    div.innerHTML = `
+      <img src="${card.imgSrc}" alt="${card.playerName}">
+      <h3>${card.playerName}</h3>
+      <p>Rating: ${card.rating}</p>
+      <button class="delete-btn" data-index="${index}">Delete</button>    
+      `;
+    //put new card at the end of the list
+    playerList.appendChild(div);
+  });
+
+  // make the button
+  const deleteButtons = document.querySelectorAll('.delete-btn');
+  //loop through each button
+  deleteButtons.forEach(btn => 
+    {
+      //add a listener
+      btn.addEventListener('click', (e) => {
+      console.log("in del func")
+      //get the index
+      const idx = e.target.getAttribute('data-index');
+      // Remove the card from the array
+      CardArray.splice(idx, 1);
+      // Save updated array to localStorage
+      localStorage.setItem('CardArray', JSON.stringify(CardArray));
+      // Re-render the list
+      autopopulateCards(CardArray);
+    });
+  });
 }
 
 main();

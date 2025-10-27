@@ -55,7 +55,7 @@ pieceoftoast42:
 4. pieceoftoast42
 5. pieceoftoast42
 6. (not necessary)
-7. ![image](openings_page)
+7. ![image](openings_page.png)
 
 sjh559:
 

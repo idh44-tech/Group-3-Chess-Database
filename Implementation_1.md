@@ -107,11 +107,11 @@ All files are [here](https://github.com/idh44-tech/Group-3-Chess-Database)
 # User Interface Design
 
 The site had a simple and intuitive design that is easy to understand.  
-![image](working_homepage)
+![image](working_homepage.png)
 The site allows you to add profiles as a user, documenting player information.
-![image](Example_profile)
+![image](Example_profile.png)
 We also have our openings page, which contains information on many common chess openings
-![image](openings_page)
+![image](openings_page.png)
 
 # Retrospective Analysis
 

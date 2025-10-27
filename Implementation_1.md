@@ -38,7 +38,7 @@ idh44-tech:
 4. idh44-tech
 5. idh44-tech
 6. [test](https://github.com/idh44-tech/Group-3-Chess-Database/blob/main/script.test.js)
-7. ![image](Working_homepage)
+7. ![image](Working_homepage.png)
 
 
 pieceoftoast42:
@@ -93,8 +93,8 @@ Through a combination of online tutorials and articles relevant to the technolog
 
 # Deployment
 
-site link [here](https://math1029.github.io/Group-3-Chess-Database/)
-Deployed via github itself this is the easiest way, at least for now, while development is still underway.  
+site link [here](https://math1029.github.io/Group-3-Chess-Database/)  
+Deployed via github itself.  This is the easiest way, at least for now, while development is still underway.  
 
 # Licensing
 
@@ -107,7 +107,7 @@ All files are [here](https://github.com/idh44-tech/Group-3-Chess-Database)
 # User Interface Design
 
 The site had a simple and intuitive design that is easy to understand.  
-![image](working_homepage.png)
+![image](Working_homepage.png)
 The site allows you to add profiles as a user, documenting player information.
 ![image](Example_profile.png)
 We also have our openings page, which contains information on many common chess openings

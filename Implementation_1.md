@@ -119,5 +119,7 @@ We were very uncoordinated with how we worked.  The work still got done, but it 
 
 # System Demonstration
 
+The demonstration video is [here](https://nau.zoom.us/rec/share/F2-O8t744fbYD2i92VE_rEMsxcqozv9rmErwNcKRzqsSG2kGG7Wg27r_E04aswXv.KszlZs3sVYWbgPbr?startTime=1761532647000)
+
 
 

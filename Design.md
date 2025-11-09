@@ -28,4 +28,9 @@ Our system doesn't explicity use any classes so far, so I can't show references 
 
 ## Memento Pattern
 
+![image](D5_Memento_Diagram.png)
+
+# Design Principles
+
+
 

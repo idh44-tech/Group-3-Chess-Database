@@ -20,4 +20,12 @@ Use case: add a new player
 
 # Design Patterns
 
+Our system doesn't explicity use any classes so far, so I can't show references to specific classes implementation, but the underlying behavior still aligns with some design patterns, so it can be represented as such.  
+
+## Observer Pattern
+
+![image](D5_Observer_Diagram.png)
+
+## Memento Pattern
+
 

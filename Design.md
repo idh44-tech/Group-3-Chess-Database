@@ -16,4 +16,8 @@ The rationale for the design of our architecture is fairly intuitive.  We have t
 
 Use case: add a new player
 
+![image](D5_Sequence_Diagram.png)
+
+# Design Patterns
+
 

@@ -14,3 +14,6 @@ The rationale for the design of our architecture is fairly intuitive.  We have t
 
 # Sequence Diagram
 
+Use case: add a new player
+
+

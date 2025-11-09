@@ -6,6 +6,6 @@ Our system is a website that allows users to create, update, and view informatio
 
 The rationale for the design of our architecture is fairly intuitive.  We have the user interface and the associated logic.  We have the player profiles, and the storage, creation, and modification of them as our "data" layer.  Finally we have another category for other, miscellaneous services included.  
 
-![image](D5_UML_diagram)
+![image](D5_UML_diagram.png)
 
 # Class Diagram

@@ -9,3 +9,8 @@ The rationale for the design of our architecture is fairly intuitive.  We have t
 ![image](D5_UML_diagram.png)
 
 # Class Diagram
+
+![image](D5_Class_Diagram.png)
+
+# Sequence Diagram
+

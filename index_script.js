@@ -52,6 +52,8 @@ function addPlayer(e)
 
     CardArray.push(playerCard);
 
+    CardArray.sort((a, b) => b.rating - a.rating);
+
     // Save to localStorage
     localStorage.setItem('CardArray', JSON.stringify(CardArray));
 

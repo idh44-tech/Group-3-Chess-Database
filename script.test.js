@@ -3,7 +3,7 @@
  * @jest-environment jsdom
  */
 
-const { addPlayer, main } = require("./script");
+const { addPlayer, main } = require("./index_script");
 
 test("no input on player name nor rating value giving false", () => {
     document.body.innerHTML = `

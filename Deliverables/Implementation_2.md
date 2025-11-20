@@ -10,11 +10,15 @@ jmk658:
 
 [link](https://github.com/idh44-tech/Group-3-Chess-Database/pulls?q=is%3Apr+author%3Ajmk658)
 
+![image](jmk658_pulls_2.png)
+
 
 
 ndv255:
 
 [link](https://github.com/idh44-tech/Group-3-Chess-Database/pulls?q=is%3Apr+author%3Andv255+)
+
+![image](ndv255_pulls.png)
 
 
 
@@ -22,10 +26,22 @@ pieceoftoast42:
 
 [link](https://github.com/idh44-tech/Group-3-Chess-Database/pulls?q=is%3Apr+author%3Apieceoftoast42)
 
+![image](pieceoftoast42_pulls_2.png)
+
 
 
 sjh559:
 
 [link](https://github.com/idh44-tech/Group-3-Chess-Database/pulls?q=is%3Apr+author%3Asjh559)
+
+![image](sjh559_pulls_2.png)
+
+
+
+math1029:
+
+[link](https://github.com/idh44-tech/Group-3-Chess-Database/pulls?q=is%3Apr+author%3Amath1029)
+
+![image](math1029_pulls.png)
 
 

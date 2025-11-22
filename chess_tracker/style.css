@@ -1,5 +1,5 @@
 
-   body {
+body {
   background: #f4f6f9;
   margin: 0;
   padding: 0;
@@ -63,9 +63,10 @@ tbody tr:hover {
 }
 
 /* Player Cards */
-.player-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+.Player-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 1.5rem;
   padding: 2rem;
 }
@@ -73,9 +74,10 @@ tbody tr:hover {
 .player-card {
   background: white;
   border-radius: 12px;
+  width: 200px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   overflow: hidden;
-  padding: 1rem;
+  padding: 2rem;
   text-align: center;
   transition: transform 0.2s ease-in-out;
 }
@@ -85,7 +87,7 @@ tbody tr:hover {
 }
 
 .player-card img {
-  width: 100%;
+  width: auto;
   height: 160px;
   object-fit: cover;
   border-radius: 8px;

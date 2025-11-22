@@ -7,15 +7,19 @@
     <title>Chess Database</title>
 </head>
 <body>
+    <div class="header">
     <h1>Chess Player Database</h1>
-    <div class="container">
-    <div class="sidebar">
-      <input type="text" id="search" placeholder="Search people..." />
-      <ul id="item-list">
-        <li data-id="person 1"><a href="Bruce Wayne/index.html">Bruce Wayne</a></li>
-        <li data-id="person 2">person 2</li>
-        <li data-id="person 3">person 3</li>
-      </ul>
+    </div>
+    <div class="container" width="100%">
+        <div class="sidebar">
+            <input type="text" id="search" placeholder="Search people..." />
+            <ul id="item-list">
+            <!--
+                <li data-id="person 1"><a href="Bruce Wayne/index.html">Bruce Wayne</a></li>
+                <li data-id="person 2">person 2</li>
+                <li data-id="person 3">person 3</li>
+            -->
+            </ul>
     <table class="elo_chart">
         <thead>
             <tr>
@@ -23,6 +27,7 @@
                 <th>Name</th>
                 <th>ID</th>
                 <th>Elo</th>
+                <th>Delete</th>
             </tr>
         </thead>
         <tbody>
@@ -59,6 +64,8 @@
             </tr>
         </tbody>
     </table>
+    </div>
+    <div class="add-Player-form">
      <section id="Player-List" class="Player-list"></section>
 
     <section class="add-Player-form">
@@ -70,7 +77,18 @@
         <button type="submit">Add Player</button>
       </form>
     </section>
+    </div>
+    
+
+    <hr> 
+        <div class="info"> 
+            <h2 >Group Details</h2>
+            <h3>Phone number:
+            602 601 8067</h3>
+        </div>
+    </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="Tracker.js"></script>
+    <script src="Final.js"></script>
 </body>
 </html>

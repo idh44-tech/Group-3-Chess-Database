@@ -3,29 +3,40 @@ const mainContent = document.getElementById('main-content');
 const searchInput = document.getElementById('search');
 
 
-
+// Sample data for items
 itemElements.forEach(item => {
+  // Sample data associated with each item
   item.addEventListener('click', () => {
+    // Sample data object
     const id = item.getAttribute('data-id');
+    // Sample data for demonstration
     const data = itemData[id];
 
     if (data) {
+      // Display data in main content area
       mainContent.innerHTML = `
         <h2>${data.title}</h2>
         <p>${data.description}</p>
         <p><strong>More Info:</strong> ${data.extra}</p>
       `;
     } else {
+      // Handle case where no data is found
       mainContent.innerHTML = `<p>No data found for "${id}"</p>`;
     }
   });
 });
 
-
-searchInput.addEventListener('input', function () {
+// Filter items based on search input
+searchInput.addEventListener('input', function () 
+{
+  //the fileter making the search lower case
   const filter = searchInput.value.toLowerCase();
-  itemElements.forEach(item => {
+  //loop through each item
+  itemElements.forEach(item => 
+    {
+    //get the text content of the item
     const text = item.textContent.toLowerCase();
+    //show or hide based on match
     item.style.display = text.includes(filter) ? '' : 'none';
   });
 });

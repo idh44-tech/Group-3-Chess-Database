@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chess Rating Tracker</title>
+  <link rel="stylesheet" href="index_style.css">
+</head>
+<body>
+  <header>
+    <h1> ♟️Chess Rating Tracker♟️ </h1>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search Players" />
+      <select id="categoryFilter">
+        <option value="">Full range</option>
+        <option value="2000+">2000+</option>
+        <option value="1000-2000">1000-2000</option>
+        <option value="500-1000">500-1000</option>
+        <option value="0-500">0-500</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <section id="Player-List" class="Player-list"></section>
+
+    <section class="add-Player-form">
+      <h2>Add a New Player</h2>
+      <form id="playerForm">
+        <input type="text" id="Player Name" placeholder="Player Name" required />
+        <input type="text" id="Rating" placeholder="Rating" required />
+        <input type="file" id="Player Image" accept="image/*" />
+        <button type="submit">Add Player</button>
+      </form>
+    </section>
+    <form action="https://68fe6903673ad3d27e292c47--luxury-cassata-ced1de.netlify.app/">
+      <input type="submit" value="popular openings"/>
+    </form>
+  </main>
+
+  <script src="index_script.js"></script>
+<footer style="text-align:center; margin-top:50px; padding:20px;">
+  <a href="Opening.html">Go to Popular Openings</a>
+</footer>
+</body>
+</html>

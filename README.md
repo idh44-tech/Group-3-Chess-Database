@@ -2,9 +2,9 @@
 
 Description: This code is for a simple chess-tracking site that allows uploading and modifying of player information as well as other features a chess player may find convenient
 
-Setup: No setup required if you simply access the site.  If you want to host a version yourself you are free to do so.
+Setup: you will need the Live server extension on Visual Studio code alopng with this you will need the basic html kit
 
-Current Version: 1.0.0-alpha
+Current Version: 1.0.1-alpha
 
 Contribution guidelines: Be cordial, do your best to make software that works and enhances the function of the site.  
 

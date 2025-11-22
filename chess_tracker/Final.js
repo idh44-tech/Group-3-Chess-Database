@@ -23,32 +23,51 @@ const defaultPlayers = [
 ];
 
 // ------------------ Load players (from localStorage or defaults) ------------------
-function loadPlayerData() {
+function loadPlayerData() 
+{
+    //create constnat to load from local storage
   const saved = localStorage.getItem('playerData');
-  if (saved) {
-    try {
+  if (saved) 
+    {
+
+    try 
+    {
+        //parse the saved data
       playerData = JSON.parse(saved);
       console.log("Loaded player data from localStorage");
-    } catch {
+    } 
+    catch 
+    {
+      //if error load default players
       playerData = defaultPlayers;
     }
-  } else {
+  } 
+  else 
+    {
+        //if nothing in local storage load default players
     playerData = defaultPlayers;
     localStorage.setItem('playerData', JSON.stringify(defaultPlayers));
   }
+  //render the players
   renderPlayers(playerData);
 }
 
 // ------------------ Render players into Elo table ------------------
 function renderPlayers(data) 
 {
+    //clear existing rows
   eloTableBody.innerHTML = '';
-  if (data.length === 0) {
+  //handle no data case
+  if (data.length === 0) 
+    {
+        // Show message if no players found
     eloTableBody.innerHTML = `<tr><td colspan="5">No players found</td></tr>`;
     return;
-  }
-
-  data.forEach((player, index) => {
+    }
+    //for each player create a row
+  data.forEach((player, index) => 
+    {
+        // Create table row
     const row = document.createElement('tr');
     row.innerHTML = `
       <td>${index + 1}</td>
@@ -57,107 +76,157 @@ function renderPlayers(data)
       <td>${player.elo}</td>
       <td><button class="delete-btn" data-id="${player.id}">Delete</button></td>
     `;
+    // Append row to table body
     eloTableBody.appendChild(row);
   });
+  // Add delete button listeners
+  document.querySelectorAll('.delete-btn').forEach(btn => 
+    {
+        
+        btn.addEventListener('click', (e) => 
+        {
+            const playerId = e.target.getAttribute('data-id'); // keep as string
+            console.log("Clicked delete for ID:", playerId);
 
-  document.querySelectorAll('.delete-btn').forEach(btn => {
-  btn.addEventListener('click', (e) => {
-    const playerId = e.target.getAttribute('data-id'); // keep as string
-    console.log("Clicked delete for ID:", playerId);
+        // Remove from playerData
+        playerData = playerData.filter(p => p.id !== playerId);
+        localStorage.setItem('playerData', JSON.stringify(playerData));
 
-    // Remove from playerData
-    playerData = playerData.filter(p => p.id !== playerId);
-    localStorage.setItem('playerData', JSON.stringify(playerData));
-
-    // Re-render the table
-    renderPlayers(playerData);
-  });
-});
+        // Re-render the table
+        renderPlayers(playerData);
+      });
+    });
 
 }
 
 
 // ------------------ Search / Filter ------------------
-searchInput.addEventListener('input', () => {
-  const query = searchInput.value.toLowerCase();
-  const filtered = playerData.filter(p =>
-    p.name.toLowerCase().includes(query) ||
-    p.id.toString().includes(query) ||
-    p.elo.toString().includes(query)
-  );
+// Listen for input in search box
+searchInput.addEventListener('input', () => 
+    {
+        // Get search query
+    const query = searchInput.value.toLowerCase();
+    // Filter playerData
+    const filtered = playerData.filter(p =>
+        p.name.toLowerCase().includes(query) ||
+        p.id.toString().includes(query) ||
+        p.elo.toString().includes(query)
+    );
+    // Render filtered results
   renderPlayers(filtered);
 });
 
 // ------------------ Load Player Cards ------------------
-window.addEventListener('DOMContentLoaded', () => {
+
+// On page load, get cards from localStorage
+window.addEventListener('DOMContentLoaded', () => 
+    {
+        // Load saved cards
   const savedCards = localStorage.getItem('CardArray');
-  if (savedCards) {
-    CardArray = JSON.parse(savedCards);
-  }
+  if (savedCards) 
+    {
+        //look for saved cards
+        CardArray = JSON.parse(savedCards);
+    }
+    // Display cards
   autopopulateCards(CardArray);
   loadPlayerData();
 });
 
 // ------------------ Add Player Form ------------------
-playerForm.addEventListener('submit', function (e) {
-  e.preventDefault();
 
+// On form submit
+playerForm.addEventListener('submit', function (e) 
+{
+    // Prevent default form submission
+  e.preventDefault();
+    // Get form values
   const playerName = playerNameInput.value.trim();
   const rating = ratingInput.value.trim();
-
+    // Simple validation
   if (!playerName || !rating) return;
-
+    // Handle image input
   let imgSrc = "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png";
-  if (imageInput.files && imageInput.files[0]) {
+  // Check if a file is selected
+  if (imageInput.files && imageInput.files[0]) 
+    {
+        //profile picture upload
     imgSrc = URL.createObjectURL(imageInput.files[0]);
   }
 
-  // --- 1️⃣ Create Card ---
+  // --- 1️ Create Card ---
+
+  // Create a player card object
   const playerCard = { playerName, rating, imgSrc };
+  // Add to CardArray and save
   CardArray.push(playerCard);
+  //save to local storage
   localStorage.setItem('CardArray', JSON.stringify(CardArray));
+  // Refresh displayed cards
   autopopulateCards(CardArray);
 
-  // --- 2️⃣ Add to Elo Table Data ---
-  const newPlayer = {
+  // --- 2️ Add to Elo Table Data ---
+  // Create new player object
+  const newPlayer = 
+  {
+    //feilds and id generation
     name: playerName,
     id: generateID(),
     elo: parseInt(rating, 10) || 0
   };
-
+    // Add to playerData and save
   playerData.push(newPlayer);
+  //save to local storage
   localStorage.setItem('playerData', JSON.stringify(playerData));
+  //render players
   renderPlayers(playerData);
 
-  // --- 3️⃣ Reset Form ---
+  // --- 3️ Reset Form ---
   playerForm.reset();
 });
 
 // ------------------ Display Player Cards ------------------
-function autopopulateCards(cards) {
+function autopopulateCards(cards) 
+{
+    // Clear existing cards
   playerList.innerHTML = "";
-  if (cards.length === 0) {
+  // Handle no cards case
+  if (cards.length === 0) 
+    {
+        // Show message if no cards
     playerList.innerHTML = "<p>No player cards yet.</p>";
     return;
   }
-
-  cards.forEach((card, index) => {
+  // Create card elements
+  cards.forEach((card, index) => 
+    {
+        // Create card div
     const div = document.createElement('div');
+    // Add class and inner HTML
     div.classList.add('player-card');
+    // Card format
     div.innerHTML = `
       <img src="${card.imgSrc}" alt="${card.playerName}">
       <h3>${card.playerName}</h3>
       <p>Rating: ${card.rating}</p>
       <button class="delete-btn" data-index="${index}">Delete</button>
     `;
+    // Append to player list
     playerList.appendChild(div);
   });
-
-  document.querySelectorAll('.delete-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
+  // Add delete button listeners
+  document.querySelectorAll('.delete-btn').forEach(btn => 
+    {
+        //add listener
+    btn.addEventListener('click', (e) => 
+        {
+            //get index
       const idx = parseInt(e.target.getAttribute('data-index'));
+      // Remove from CardArray
       CardArray.splice(idx, 1);
+      // Save updated array
       localStorage.setItem('CardArray', JSON.stringify(CardArray));
+        // Re-render cards
       autopopulateCards(CardArray);
     });
   });

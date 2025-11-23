@@ -134,9 +134,30 @@ link: not applicable, only did the prompt in browser without account.
 
 ## Detailed Analysis and Response
 
-AI feedback: 
+*AI feedback: *
 
-<span style="background color: yellow">text</span>
+You use:
+
+<button class="delete-btn" data-index="${index}">
+
+But the function parameter index is never passed.
+
+✔ Fix (index_script.js)
+
+Lines ~95–111
+Modify autopopulateCards:
+
+- cards.forEach(card => {
++ cards.forEach((card, i) => {
+...
+- <button class="delete-btn" data-index="${index}">Delete</button>
++ <button class="delete-btn" data-index="${i}">Delete</button>
+
+Why:
+
+Fixes non-functional delete buttons.
+
+Absolutely critical.
 
 Reviewer: Jason Kelly
 
@@ -154,7 +175,30 @@ Explanation:
 
 AI feedback: 
 
+Sorting:
 
+CardArray.sort((a,b)=> b.rating - a.rating)
+
+If rating is "500" (string), subtraction works — but adding players or modifying structure later may break this.
+
+✔ Fix (index_script.js)
+
+Lines ~48–55
+
+const rating = document.getElementById("rating").value.trim();
+...
+const playerCard = {
+    playerName,
+-   rating,
++   rating: Number(rating),
+    imgSrc
+);
+
+Why:
+
+Prevents numeric sorting issues.
+
+Recommended for all numeric input fields.
 
 Reviewer: Jason Kelly
 

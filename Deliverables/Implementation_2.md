@@ -118,9 +118,127 @@ We have no automated testing beyond what we had in implementation 1.
 
 # System Demonstration
 
-
+[link](https://nau.zoom.us/rec/share/JvOcIzzcSH8ZoMcUgpbVIIHSrKjgQUP_vMgnpFmodsy60z7_3RJ2ZAlKTzi_tmyI.Mhf3BlU-FPWVwORm?startTime=1761532647000)
 
 # AI-Assisted Code Quality Review
+
+## AI Interaction
+
+Model: chatGPT 5
+
+Prompt:
+
+"Hello, I am going to provide you with the full source code for a website below, I ask that you do the following: Review the code and provide recommendations on how the code might be improved or streamlined. For each modification, indicate the file you are changing and include every specific modification you make with line numbers in the code. Also please include a short summary of for what contexts this modification would be appropriate or where it would be unnecessary. You can assume the file players.json exists and is empty by default. Here is the code: (full code for site)"
+
+link: not applicable, only did the prompt in browser without account.  
+
+## Detailed Analysis and Response
+
+AI feedback: 
+
+<span style="background color: yellow">text</span>
+
+Reviewer: Jason Kelly
+
+Severity Assessment:
+
+
+
+Decision:
+
+
+
+Explanation:
+
+
+
+AI feedback: 
+
+
+
+Reviewer: Jason Kelly
+
+Severity Assessment:
+
+
+
+Decision:
+
+
+
+Explanation:
+
+
+
+AI feedback: 
+
+
+
+Reviewer: Jason Kelly
+
+Severity Assessment:
+
+
+
+Decision:
+
+
+
+Explanation:
+
+
+
+AI feedback: 
+
+
+
+Reviewer: Jason Kelly
+
+Severity Assessment:
+
+
+
+Decision:
+
+
+
+Explanation:
+
+
+
+AI feedback: 
+
+
+
+Reviewer: Jason Kelly
+
+Severity Assessment:
+
+
+
+Decision:
+
+
+
+Explanation:
+
+
+
+AI feedback: 
+
+
+
+Reviewer: Jason Kelly
+
+Severity Assessment:
+
+
+
+Decision:
+
+
+
+Explanation:
 
 
 

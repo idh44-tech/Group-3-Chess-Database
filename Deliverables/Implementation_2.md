@@ -36,7 +36,7 @@ Reviewer:
 
 Automated Testing: 
 
-Visual Evidence: 
+Visual Evidence: N/A
 
 
 
@@ -60,7 +60,7 @@ Reviewer:
 
 Automated Testing: 
 
-Visual Evidence: 
+Visual Evidence: not yet implemented
 
 
 
@@ -114,7 +114,7 @@ Visual Evidence:
 
 # Automated Testing
 
-
+We have no automated testing beyond what we had in implementation 1.  
 
 # System Demonstration
 

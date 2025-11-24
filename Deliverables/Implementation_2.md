@@ -54,7 +54,7 @@ Issue Link: [here](https://github.com/idh44-tech/Group-3-Chess-Database/issues/3
 
 Pull Request Link: 
 
-Author: pieceoftoast43
+Author: pieceoftoast42
 
 Reviewer: 
 

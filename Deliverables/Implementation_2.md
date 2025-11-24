@@ -163,15 +163,15 @@ Reviewer: Jason Kelly
 
 Severity Assessment:
 
-
+Not an issue
 
 Decision:
 
-
+rejected
 
 Explanation:
 
-
+Button actually does function, maybe the AI was hallucinating here?
 
 AI feedback: 
 
@@ -204,87 +204,167 @@ Reviewer: Jason Kelly
 
 Severity Assessment:
 
-
+high
 
 Decision:
 
-
+implemented
 
 Explanation:
 
+Makes the system better for potential high player numbers or new features
+
+new code: 
+
+if (isNaN(rating) || rating < 0 || rating > 4000) {
+    alert("Please enter a valid rating (0–4000).");
+    return false;
+  }
+
+  let imgSrc =
+    "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png";
+
+  if (imageInput.files && imageInput.files[0]) {
+    imgSrc = URL.createObjectURL(imageInput.files[0]);
+  }
 
 
 AI feedback: 
 
+You have:
 
+module.exports = {addPlayer, main};
+
+This only works in Node, not browsers.
+
+✔ Fix (index_script.js)
+
+Delete last line
+
+- module.exports = {addPlayer, main};
+
+When unnecessary:
+
+If you are using this inside a test runner like Jest.
+
+But for browser use, this must be removed.
 
 Reviewer: Jason Kelly
 
 Severity Assessment:
 
-
+medium
 
 Decision:
 
-
+implemented
 
 Explanation:
 
+Removed for final version so that there are no issues with using in browser
 
+code here:
+
+(none, the modification was deleting the relevant code)
 
 AI feedback: 
 
+✔ Add validation after reading rating
 
+if (isNaN(rating) || rating < 0 || rating > 4000) {
+    alert("Please enter a valid rating (0-4000).");
+    return false;
+}
 
 Reviewer: Jason Kelly
 
 Severity Assessment:
 
-
+low
 
 Decision:
 
-
+implemented
 
 Explanation:
 
+Seems somewhat unneccessary, but not a bad idea either
 
+new code:
+
+if (isNaN(rating) || rating < 0 || rating > 4000) {
+    alert("Please enter a valid rating (0–4000).");
+    return false;
+  }
 
 AI feedback: 
 
+index.html uses:
 
+<section class="add-Player-form">
+
+CSS defines:
+
+.add-player-form
+
+Hyphens and capitalization don't match.
+
+✔ Fix (index.html)
+
+Line ~28
+
+- <section class="add-Player-form">
++ <section class="add-player-form">
+
+Why:
+
+Prevent CSS not applying to the form.
 
 Reviewer: Jason Kelly
 
 Severity Assessment:
 
-
+low
 
 Decision:
 
-
+implemented
 
 Explanation:
 
+Really just a formatting issue.  Not a big problem, but I see no reason not to implement the change.
 
+new code: 
+
+<section class="add-player-form">
 
 AI feedback: 
 
+Add:
 
+.player-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+Why:
+
+Ensures uniform card layout (currently text alignment varies).
 
 Reviewer: Jason Kelly
 
 Severity Assessment:
 
-
+low
 
 Decision:
 
-
+rejected
 
 Explanation:
 
-
+Cards are already aligned as far as I can tell, unnecessary to modify and you shouldn't modify working code.  
 
 # Retrospective Analysis
 

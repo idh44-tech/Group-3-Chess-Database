@@ -24,4 +24,130 @@ Interview questions:
 
 # Results Summary
 
+## Interview 1
+
+Interviewer: Jason Kelly
+
+Interviewee: Julia Kelly
+
+Participant relevance to target demographic: Chess player
+
+Question 2 score: 9
+
+Question 3 score: 3
+
+Question 4 score: 1
+
+Common themes: Confused about the purpose of the website
+
+Quotes: "What is the website for?"
+
+Pain points: Was confused on what the "add file" button was for
+
+## Interview 2
+
+Interviewer: Seamus Hamilton
+
+Interviewee: Esteban Grijalva
+
+Participant relevance to target demographic: user and chess player
+
+Question 2 score: 9
+
+Question 3 score: 5
+
+Question 4 score: 2
+
+Common themes: Felt the system was very bare-bones
+
+Quotes: "It seems basic"
+
+Pain points: wanted to press enter to search instead of pushing a button
+
+## Interview 3
+
+Interviewer: Maddux Houseman
+
+Interviewee: Cooper Houseman
+
+Participant relevance to target demographic: Occasional chess player
+
+Question 2 score: 9
+
+Question 3 score: 5
+
+Question 4 score: 4
+
+Common themes: Felt it would be useful for small groups and friends
+
+Quotes: "It would be good for smaller groups"
+
+Pain points: Confused on the purpose of the "add file" button
+
+## Interview 4
+
+Interviewer: Evan Paddock
+
+Interviewee: Carson Johnson
+
+Participant relevance to target demographic: President of the NAU chess club
+
+Question 2 score: 9
+
+Question 3 score: 9
+
+Question 4 score: 9
+
+Common themes: Very positive
+
+Quotes: "It looks very practical."
+
+Pain points:  Had trouble finding the button for the site
+
+## Interview 5
+
+Interviewer: Evan Paddock
+
+Interviewee: Adam Johnson
+
+Participant relevance to target demographic: plays chess both casually and competitively
+
+Question 2 score: 10
+
+Question 3 score: 7
+
+Question 4 score: 5
+
+Common themes: Website is fundamentally solid, just need polish
+
+Quotes: "Add button instead of a link to openings page"
+
+Pain points: thinks the website is underwhelming.
+
+## Interview 6
+
+Interviewer: Noah Valdez
+
+Interviewee: Hannah Guzman
+
+Participant relevance to target demographic: casual chess player
+
+Question 2 score: 10
+
+Question 3 score: 5
+
+Question 4 score: 3
+
+Common themes: Thinks the website's visual design is lackluster
+
+Quotes: "The website's look is somewhat bland."
+
+Pain points: Disliked the visual look of the site.
+
+# Analysis and Reflection
+
+
+
+# Proposed Improvements
+
 

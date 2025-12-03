@@ -150,8 +150,24 @@ Pain points: Disliked the visual look of the site.
 
 (average scores for each of the quantitiative questions)
 
+quotes: "It seems basic" "It would be good for smaller groups" "The website's look is somewhat bland"
 
+## Value Proposition
+
+We successfully built the MVP, and while it accomplishes almost everything we set out for the MVP, it may take some work before it delivers appreciable value to the user.  The feedback overall indicates that the problem with the current version of the site is that it lacks features and polish that would allow it to truly deliver value to the user.  
+
+## What Worked Well
+
+Creating and deleting user profiles was well-recieved by our interviewees.  Almost all of them commented that using the system was simple and intuitive.  
+
+## Areas For improvement
+
+Many interviewees had trouble understanding the purpose of the "add file" as well as issues with finding the openings page.  In addition, general sentiments from users seem to indicate they feel the system is very bare-bones at this time, lacking some of the features they'd like to see in a final product.  
 
 # Proposed Improvements
 
+Our first priority would obviously be to get the search feature functioning.  After that would be the addition of more metrics to give more specific information beyond elo.  Finally we might want to clean up and rework the visual style of the site to be more appealing.
 
+We might have to look more deeply at how chess players might actually use the system to get a better idea of what we should target in terms of functionality.  Interviews only tell part of the story.  
+
+It would be a good idea to find ways to collect data about more natural usage of the system outside of a specific interiviewing environement to see what users in the wild will actually want out of it.  

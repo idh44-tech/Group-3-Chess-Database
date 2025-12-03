@@ -147,6 +147,7 @@ Pain points: Disliked the visual look of the site.
 # Analysis and Reflection
 
 ![image](avg_scores.png)
+
 (average scores for each of the quantitiative questions)
 
 
